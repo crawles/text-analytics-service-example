@@ -1,0 +1,2 @@
+# text-analytics-service-example
+.
