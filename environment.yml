@@ -1,0 +1,6 @@
+name: jupyter
+dependencies:
+  - jupyter
+  - pip:
+    - dill
+    - jupyter_kernel_gateway

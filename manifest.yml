@@ -1,0 +1,13 @@
+---
+applications:
+- name: sentiment-predict
+  memory: 1GB
+  disk_quota: 1GB
+  random-route: false
+  path: .
+  buildpack: https://github.com/cloudfoundry/python-buildpack.git
+  command: >
+    jupyter-kernelgateway --KernelGatewayApp.port=$PORT
+    --KernelGatewayApp.ip=0.0.0.0
+    --KernelGatewayApp.api=notebook-http
+    --KernelGatewayApp.seed_uri='https://raw.githubusercontent.com/jupyter-incubator/kernel_gateway_demos/master/scotch_demo/notebooks/scotch_api_python.ipynb'
