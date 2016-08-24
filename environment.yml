@@ -3,6 +3,7 @@ dependencies:
 - jupyter
 - pandas==0.18.1
 - pip==8.1.2
+- requests
 - scikit-learn
 - pip:
     - dill==0.2.5
