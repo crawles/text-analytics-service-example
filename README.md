@@ -33,6 +33,7 @@ The classifier accepts POST requests of text and returns a polarity prediction f
 $ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute-flask.cfapps.pez.pivotal.io/polarity_compute
 ```
 ```
+# returned result
 {
   "polarity": [
     0.7803128570201056,
