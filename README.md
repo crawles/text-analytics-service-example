@@ -3,7 +3,7 @@ Example for deploying a machine learning model for analyzing text. The example d
 * Jupyter Notebook (via the [Jupyter Kernel Gateway](https://github.com/jupyter/kernel_gateway))
 * Flask
 
-Both apps are deployed on Cloud Foundry. The apps utilize a pre-trained classifier which can be applied to new data via a POST request.
+Both apps are deployed on Cloud Foundry.
 
 Both implementations use this [sentiment classifier](https://github.com/crawles/sentiment_analysis_twitter_model). The classifier is based on the approach of [Go et al](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf) using the [Sentiment140 data](http://help.sentiment140.com/for-students/)
 
