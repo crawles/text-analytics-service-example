@@ -30,8 +30,14 @@ cf push
 ### Using the classifier via the API
 The classifier accepts POST requests of text and returns a polarity prediction from 0 to 1. Lower polarity indicates negative sentiment and higher polarity indicates positive sentiment.
 ```
-$ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute.cfapps.pez.pivotal.io/polarity_compute
-[ 0.78031286  0.49108975  0.14809403]
+$ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute-flask.cfapps.pez.pivotal.io/polarity_compute
+{
+  "polarity": [
+    0.7803128570201056,
+    0.49108974839197184,
+    0.14809403223487322
+  ]
+}
 ```
 ### Resources
 
