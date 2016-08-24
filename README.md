@@ -24,5 +24,6 @@ cf push
 ### Using the classifier via the API
 The classifier accepts POST requests of text:
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute.cfapps.pez.pivotal.io/polarity_compute
+$ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute.cfapps.pez.pivotal.io/polarity_compute
+[ 0.78031286  0.49108975  0.14809403]
 ```
