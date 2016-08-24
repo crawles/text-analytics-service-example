@@ -43,7 +43,7 @@ $ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awe
 }
 ```
 
-Both apps are currently deployed and be accessed at:
+Examples of both apps are currently deployed and be accessed at:
 
 ```
 sentiment-compute.cfapps.pez.pivotal.io/polarity_compute
