@@ -16,8 +16,14 @@ Both implementations use this [sentiment classifier](https://github.com/crawles/
 cd jupyter_gateway_deployment
 cf push
 ```
-#### Flask microservice
+#### Flask Microservice
 ```
 cd flask_deployment
 cf push
 ```
+### Using the classifier via the API
+The classifier accepts POST requests of text:
+```curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD",\
+                                                               "Steph Curry is a basketball player",\
+                                                               "i am so mad and angry"]}'
+                                                      sentiment-compute.cfapps.pez.pivotal.io/polarity_compute```
