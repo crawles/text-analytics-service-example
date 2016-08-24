@@ -1,5 +1,5 @@
 ##Example: Text Analytics as a Service
-Example for deploying a machine learning model for analyzing text. The example deploys a Twitter sentiment analysis microservice accessible via an API. There are two implementatations of deploying the model using 
+Example for deploying a machine learning model for analyzing text. The example deploys a Twitter sentiment classifier as a microservice accessible via an API POST request. There are two implementatations of deploying the model using 
 * Jupyter Notebook (via the [Jupyter Kernel Gateway](https://github.com/jupyter/kernel_gateway))
 * Flask
 
