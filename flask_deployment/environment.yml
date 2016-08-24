@@ -1,7 +1,6 @@
 name: jupyter
 dependencies:
   - flask
-  - openssl=1.0.1k=1
   - pandas
   - requests
   - scikit-learn
