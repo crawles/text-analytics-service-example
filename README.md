@@ -42,6 +42,12 @@ $ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awe
   ]
 }
 ```
+
+Both apps are currently deployed and be accessed at:
+
+`sentiment-compute.cfapps.pez.pivotal.io/polarity_compute`
+`sentiment-compute-flask.cfapps.pez.pivotal.io/polarity_compute`
+
 ### Resources
 
 * [Sentiment classifier](https://github.com/crawles/sentiment_analysis_twitter_model)
