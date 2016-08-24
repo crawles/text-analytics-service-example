@@ -1,8 +1,8 @@
 name: jupyter
 dependencies:
 - jupyter
-- pandas=0.18.1
-- pip=8.1.2
+- pandas==0.18.1
+- pip==8.1.2
 - pip:
-    - dill=0.2.5
+    - dill==0.2.5
     - jupyter_kernel_gateway

@@ -1,8 +1,8 @@
 ---
 applications:
-- name: sentiment-compute
-  memory: 2GB
-  disk_quota: 2GB
+- name: sentiment-compute-flask
+  memory: 1GB
+  disk_quota: 1GB
   instances: 1
   buildpack: https://github.com/cloudfoundry/python-buildpack.git
-  command: sh start_service.sh
+  command: python sentiment_service.py
