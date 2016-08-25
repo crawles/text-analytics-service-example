@@ -1,5 +1,5 @@
 ##Example: Text Analytics as a Service
-Example for deploying a machine learning model for analyzing text. The example deploys a Twitter sentiment classifier as a microservice accessible via an API POST request. There are two implementatations of deploying the model using 
+Example for deploying a machine learning model for analyzing text. The example deploys a Twitter sentiment classifier as a microservice accessible via an API `POST` request. There are two implementatations of deploying the model using 
 * Jupyter Notebook (via the [Jupyter Kernel Gateway](https://github.com/jupyter/kernel_gateway))
 * Flask
 
@@ -30,7 +30,7 @@ cd flask_deployment
 cf push
 ```
 ### Using the classifier via the API
-The classifier accepts POST requests of text and returns a polarity prediction from 0 to 1. Lower polarity indicates negative sentiment and higher polarity indicates positive sentiment.
+The classifier accepts `POST` requests of text and returns a polarity prediction from 0 to 1. Lower polarity indicates negative sentiment and higher polarity indicates positive sentiment.
 ```
 $ curl -H "Content-Type: application/json" -X POST -d '{"data":["This app is awesome and in the CLOUD","Steph Curry is a basketball player","i am so mad and angry"]}' sentiment-compute-flask.cfapps.pez.pivotal.io/polarity_compute
 ```
