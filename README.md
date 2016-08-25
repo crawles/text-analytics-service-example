@@ -10,11 +10,13 @@ Both implementations use this [sentiment classifier](https://github.com/crawles/
 ### Requirements
 * Cloud Foundry
 
-If you do not have an account on a Cloud Foundry installation you can register for a free trial at [Pivotal Web Services (PWS)](http://run.pivotal.io).
+If you do not have an account on a Cloud Foundry installation you can register for a free trial at [Pivotal Web Services (PWS)](http://run.pivotal.io). 
 
 Download the Cloud Foundry Command Line Interface from the CF management console
 or [the CF Github repo](https://github.com/cloudfoundry/cli).
 This provides the `cf` command which you will use to interact with a CF installation.
+
+Alternatively, you can install [PCF Dev](https://github.com/pivotal-cf/pcfdev) to install Cloud Foundry on a single work station.
 
 ### Deploying the classifier
 #### Jupyter Notebook Microservice
