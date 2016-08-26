@@ -8,21 +8,16 @@ App implements a pre-trained sentiment analysis pipeline.
 
 '''
 import os
-import urllib.request
 
 import dill
 from flask import Flask, request, jsonify
 import pandas as pd
+import requests
 import sklearn
 
-import requests
 resp = requests.get("https://github.com/crawles/sentiment_analysis_twitter_model/raw/master/twitter_sentiment_model.pkl")
 resp.raise_for_status()
 cl = dill.loads(resp.content)
-
-#f = open('twitter_sentiment_model.pkl', 'rb')
-#cl = dill.load(f)
-#f.close()
 
 app = Flask(__name__)
 
