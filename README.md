@@ -7,8 +7,7 @@ Both apps are deployed on Cloud Foundry. This example deploys a trained sentimen
 
 Both implementations use [this sentiment classifier](https://github.com/crawles/sentiment_analysis_twitter_model). The classifier is based on the approach of [Go et al](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf) using the [Sentiment140 data](http://help.sentiment140.com/for-students/)
 
-### Requirements
-* Cloud Foundry
+### Deploying to Cloud Foundry
 
 If you do not have an account on a Cloud Foundry installation you can register for a free trial at [Pivotal Web Services (PWS)](http://run.pivotal.io). 
 
