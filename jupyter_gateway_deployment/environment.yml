@@ -2,6 +2,7 @@ name: jupyter
 dependencies:
 - jupyter
 - pandas==0.18.1
+- python=2.7.11
 - pip==8.1.2
 - requests
 - scikit-learn

@@ -1,11 +1,11 @@
 ##Example: Text Analytics as a Service
-This example deploys a Twitter sentiment classifier as a microservice accessible via an API `POST` request. There are two implementatations of deploying the model using 
+This example deploys a Twitter sentiment classifier as a microservice accessible via an API `POST` request. The classier was built using PL/Python in Greenplum Database (GPDB). There are two implementatations of deploying the model using 
 * Jupyter Notebook (via the [Jupyter Kernel Gateway](https://github.com/jupyter/kernel_gateway))
 * Flask
 
 Both apps are deployed on Cloud Foundry. This example deploys a trained sentiment classifier, but this framework can be modified for additional text analytics and general data science tasks.
 
-Both implementations use [this sentiment classifier](https://github.com/crawles/sentiment_analysis_twitter_model). The classifier is based on the approach of [Go et al](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf) using the [Sentiment140 data](http://help.sentiment140.com/for-students/)
+Both implementations use [this sentiment classifier](https://github.com/crawles/gpdb_sentiment_analysis_twitter_model) which was built in a massively parallel processing environment using GPDB. The classifier is based on the approach of [Go et al](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf) using the [Sentiment140 data](http://help.sentiment140.com/for-students/)
 
 ### Deploying to Cloud Foundry
 
