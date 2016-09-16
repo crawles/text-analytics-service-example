@@ -55,9 +55,9 @@ sentiment-compute-flask.cfapps.pez.pivotal.io/polarity_compute
 
 ### Resources
 
-* [Sentiment classifier](https://github.com/crawles/sentiment_analysis_twitter_model)
+* [Sentiment classifier](https://github.com/crawles/gpdb_sentiment_analysis_twitter_model)
 * [Python Cloud Foundry examples](https://github.com/ihuston/python-cf-examples)
-* [Cloud Foundry Documentation](https://github.com/ihuston/python-cf-examples)
+* [Cloud Foundry Documentation](https://docs.cloudfoundry.org/)
 * Pivotal Blog: [Model scoring as a service](https://blog.pivotal.io/data-science-pivotal/products/scoring-as-a-service-to-operationalize-algorithms-for-real-time)
 
 ### Author
