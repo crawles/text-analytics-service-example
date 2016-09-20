@@ -1,5 +1,9 @@
 ##Example: Text Analytics as a Service
-This example deploys a Twitter sentiment classifier as a microservice accessible via an API `POST` request. The classier was built using PL/Python in Greenplum Database (GPDB). There are two implementatations of deploying the model using 
+This example deploys a Twitter sentiment classifier as a microservice accessible via an API `POST` request. The classier was built using PL/Python in Greenplum Database (GPDB). 
+
+Read this [blog post](https://blog.pivotal.io/data-science-pivotal/case-studies/data-science-how-to-text-analytics-as-a-service) for more information.
+
+There are two implementatations of deploying the model using 
 * Jupyter Notebook (via the [Jupyter Kernel Gateway](https://github.com/jupyter/kernel_gateway))
 * Flask
 

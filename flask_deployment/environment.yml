@@ -6,4 +6,5 @@ dependencies:
   - requests
   - scikit-learn
   - pip:
+      - gevent
       - gunicorn
