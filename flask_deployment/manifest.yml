@@ -5,4 +5,4 @@ applications:
   disk_quota: 2GB
   instances: 1
   buildpack: https://github.com/cloudfoundry/python-buildpack.git
-  command: gunicorn --bind 0.0.0.0:$PORT sentiment_service:app
+  command: wget https://raw.githubusercontent.com/crawles/gpdb_sentiment_analysis_twitter_model/master/twitter_sentiment_model.pkl && gunicorn --bind 0.0.0.0:$PORT sentiment_service:app
