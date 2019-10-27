@@ -12,12 +12,10 @@ import os
 
 from flask import Flask, request, jsonify
 import pandas as pd
-import requests
 import sklearn
 
-resp = requests.get("https://raw.githubusercontent.com/crawles/gpdb_sentiment_analysis_twitter_model/master/twitter_sentiment_model.pkl")
-resp.raise_for_status()
-cl = cPickle.loads(resp.content)
+model = open("twitter_sentiment_model.pkl", "r")
+cl = cPickle.loads(model.read())
 
 def regex_preprocess(raw_tweets):
     pp_text = pd.Series(raw_tweets)
